@@ -14,8 +14,8 @@
 
 </head>
 
-<body class="vh-100">
-  <main class="">
+<body class="vh-100 overflow-hidden">
+  <main class="containerCard vh-100 overflow-hidden">
     <section class="card bg-light">
       <div class="d-flex justify-content-between">
         <div class="textContainer h-100 p-5">
@@ -36,57 +36,69 @@
               <ul class="fs-5 mt-2 mb-3 list-unstyled">
                 <li class="d-flex gap-3">
                   <figure><img src="./assets/images/icon-list.svg" alt="iconList"></figure>
-                 Product discovery and building what matters</li>
+                  Product discovery and building what matters
+                </li>
 
                 <li class="d-flex gap-3">
-                  <figure><img src="./assets/images/icon-list.svg" alt="iconList"></figure>Measuring to ensure updates are a success</li>
+                  <figure><img src="./assets/images/icon-list.svg" alt="iconList"></figure>Measuring to ensure updates
+                  are a success
+                </li>
 
                 <li class="d-flex gap-3">
-                  <figure><img src="./assets/images/icon-list.svg" alt="iconList"></figure>And much more!</li>
+                  <figure><img src="./assets/images/icon-list.svg" alt="iconList"></figure>And much more!
+                </li>
               </ul>
             </div>
 
-            <form class="">
+            <form>
               <div class="formContainer d-flex flex-column">
                 <div class="labelContent d-flex justify-content-between mb-2">
                   <label for="emailInput">Email address</label>
-                  <label class="invalid" for="emailInput">Invalid structure email!</label>
+                  <label id="invalidMessage" class="visually-hidden" for="emailInput">Invalid structure email!</label>
                 </div>
                 <input type="email" name="email" id="emailInput" placeholder="email@company.com">
               </div>
             </form>
 
-            <button class="mt-4" type="button">Subscribe to monthly newsletter</button>
-
+            <button class="buttonSubs mt-4" type="button">Subscribe to monthly newsletter</button>
           </article>
-
 
         </div>
         <div class="p-4">
-          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+          <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop image">
         </div>
-
       </div>
 
+
+
+
     </section>
+    
+    <div class="Modal vh-100 vw-100">
+
+      <section class="modalContent">
+      
+            <button class="closeIcon" type="button">&times;</button>
+        
+        <div class="successIcon">
+          <figure>
+            <img src="./assets/images/icon-success.svg" alt="">
+          </figure>
+        </div>
+
+        <h2 class="mb-5">Thanks for subscribing!</h2>
+
+        <article>
+
+          <p class="P1 mb-5"> A confirmation email has been sent to <strong>ash@loremcompany.com.</strong>
+            Please open it and click the button inside to confirm your subscription.</p>
+
+          <button type="button" class="Dismiss w-100">Dismiss message</button>
+
+        </article>
+      </section>
+    </div>
   </main>
-  <!-- Sign-up form start -->
-
-
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  <!-- Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message -->
-
-  <!-- Success message end -->
-
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
