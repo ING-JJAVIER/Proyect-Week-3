@@ -4,9 +4,7 @@ const label = document.querySelector('#invalidMessage');
 const button = document.querySelector('.buttonSubs')
 const Dismiss = document.querySelector('.Dismiss')
 const closeButton = document.querySelector('.closeButton')
-
-
-/* Variables */
+const textContainer=document.querySelector('.textContainer')
 
 
 
@@ -20,8 +18,11 @@ closeButton.addEventListener('click', pressedButton);
 
 /* Funciones */
 function pressedButton() {
+   
     document.getElementById('btnSubs').disabled = true;
     modal.classList.toggle('visually-hidden')
+    textContainer.classList.toggle('visually-hidden')
+
     form.reset()
     
 }

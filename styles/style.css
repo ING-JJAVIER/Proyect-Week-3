@@ -149,6 +149,11 @@ input {
 }
 
 @media (max-width: 650px) {
+    .Modal{
+        overflow: hidden;
+        height: 100%;
+        
+    }
     .imgContainer {
         display: none;
     }
