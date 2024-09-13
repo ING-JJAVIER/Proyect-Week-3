@@ -7,7 +7,7 @@
 
 body {
     background-color: #37384e;
-    overflow: hidden;
+
 
 }
 
@@ -28,7 +28,7 @@ h1 {
 }
 
 p {
-    width: 28rem;
+    width: 90%;
 
 }
 
@@ -44,7 +44,7 @@ p {
 
 input {
     outline: none;
-    width: 25rem;
+    width: 86%;
     padding: .8rem;
     border: solid rgba(128, 128, 128, 0.507) 1px;
     border-radius: .5rem;
@@ -56,10 +56,10 @@ input {
     color: red;
 }
 
-button {
+.buttonSubs {
     background-color: #232742;
     color: azure;
-    width: 25rem;
+    width: 86%;
     padding: .8rem;
     border: solid rgba(128, 128, 128, 0.308) 1px;
     border-radius: .5rem;
@@ -74,6 +74,11 @@ button {
     font-size: 1.1rem;
 }
 
+.buttonSubs:disabled {
+    background-color: rgba(128, 128, 128, 0.411);
+    font-size: 1rem
+}
+
 .Modal {
     position: absolute;
     background-color: #37384e;
@@ -82,28 +87,56 @@ button {
     align-items: center;
 }
 
-.close {
-    position: relative;
-}
-
-.closeIcon {
-    position: absolute;
-    top: 0;
-    right: 0;
-    
-}
-
 .modalContent {
     position: relative;
     padding: 4rem;
     background-color: white;
     width: 35%;
     min-width: 20rem;
-    border-radius: 3rem;
+    border-radius: 2.5rem;
+}
+
+.closeButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #e2111100;
+    color: black;
+    border-radius: .5rem;
+}
+
+.closeButton:hover {
+    background-color: #e2111183;
+}
+
+.closeButton:active {
+    background-color: #e21111;
+    color: azure;
+}
+
+.Dismiss {
+    background-color: #232742;
+    color: azure;
+    width: 25rem;
+    padding: .8rem;
+    border: solid rgba(128, 128, 128, 0.308) 1px;
+    border-radius: .5rem;
+}
+
+.Dismiss:hover {
+    background-color: #232742cc;
+}
+
+.Dismiss:active {
+    background-color: #232742;
+    font-size: 1.1rem;
 }
 
 .modalContent>h2 {
     font-weight: bold;
+
 }
 
 .P1 {
@@ -113,4 +146,55 @@ button {
 
 .Dismniss {
     height: 2rem;
+}
+
+@media (max-width: 650px) {
+    .imgContainer {
+        display: none;
+    }
+
+    .img1 {
+        display: none;
+    }
+
+    .img2 {
+        width: 100%;
+
+    }
+
+    .card {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .pContainer {
+        width: 100%;
+    }
+
+    .labelContent{
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .buttonSubs {
+        width: 100%
+    }
+
+    p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 650px) {
+
+    .img2 {
+        display: none;
+    }
 }
